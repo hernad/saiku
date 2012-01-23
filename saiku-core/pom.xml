@@ -29,17 +29,17 @@
                         <url>http://repository.codehaus.org/</url>
         </repository>
 		
-<repository>
+       <repository>
 			<id>pentaho-repo</id>
 			<name>pentaho repository</name>
 			<url>http://repository.pentaho.org/artifactory/pentaho</url>
 		</repository>
-			<repository>
+		<repository>
 			<id>ibiblio</id>
 			<url>http://ibiblio.org/maven2/</url>
 			<snapshots><enabled>false</enabled></snapshots>
 		</repository>
-			<repository>
+	    <repository>
 			<id>java</id>
 			<url>http://download.java.net/maven/2/</url>
 			<snapshots><enabled>true</enabled></snapshots>
