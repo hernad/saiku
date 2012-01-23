@@ -58,11 +58,11 @@ case $1 in
 			;;
 			"ui")
 				cd saiku-ui
-				mvn clean package install:install-file -Dfile=target/saiku-ui-2.2-SNAPSHOT.war  -DgroupId=org.saiku -DartifactId=saiku-ui -Dversion=2.2-SNAPSHOT -Dpackaging=war
+				mvn -Dmaven.test.skip=true clean package install:install-file -Dfile=target/saiku-ui-2.2-SNAPSHOT.war  -DgroupId=org.saiku -DartifactId=saiku-ui -Dversion=2.2-SNAPSHOT -Dpackaging=war
 			;;
 			*)
 				cd saiku-$2
-				mvn clean install
+				mvn -Dmaven.test.skip=true clean install
 			;;
 		esac
 	;;
